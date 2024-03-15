@@ -1,9 +1,9 @@
-public class Pattern3 {
+public class Pattern5 {
   public static void main(String[] args) {
-    int rows = 5;
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < rows; j++) {
-        if ((i == 0) || (i == rows - 1) || (j == 0) || (j == rows - 1)) {
+    int n = 5, m = 9;
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < m; j++) {
+        if ((i + j == 4) || (j - i == 4) || (i == 4 && j % 2 == 0)) {
           System.out.print("*" + " ");
         } else {
           System.out.print(" " + " ");
