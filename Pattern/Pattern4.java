@@ -11,17 +11,15 @@ public class Pattern4 {
       }
       System.out.println();
     }
-    // for (int i = n; i < 12; i++) {
-    // for (int j = m; j < 13; j++) {
-    // if ((i == && j % 3 == 0) || (i == 0 && j % 3 != 0) || (i - j == 2) || (i + j
-    // == 8)) {
-    // System.out.print("*" + " ");
-    // } else {
-    // System.out.print(" ");
-    // }
-    // }
-    // System.out.println();
-    // }
-
+    for (int i = n + 1; i < 12; i++) {
+      for (int j = 0; j < m; j++) {
+        if ((i == 10 && j % 3 == 0) || (i == 11 && j % 3 != 0) || (i + j == 9) || (i - j == 3)) {
+          System.out.print("*" + " ");
+        } else {
+          System.out.print(" ");
+        }
+      }
+      System.out.println();
+    }
   }
 }
