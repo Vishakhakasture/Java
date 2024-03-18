@@ -16,5 +16,6 @@ public class Assignment {
     System.out.println("Multiplication using assignment operator is: " + mul);
     int div = a /= b;
     System.out.println("Division using assignment operator is: " + div);
+    sc.close();
   }
 }

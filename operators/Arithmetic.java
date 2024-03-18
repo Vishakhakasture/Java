@@ -49,5 +49,6 @@ class Number {
         break;
 
     }
+    sc.close();
   }
 }

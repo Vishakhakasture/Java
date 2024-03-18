@@ -16,5 +16,6 @@ public class Bike {
     } else {
       System.out.println("Go with Activa");
     }
+    sc.close();
   }
 }
