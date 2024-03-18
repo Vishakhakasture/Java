@@ -6,6 +6,6 @@ public class Greatest {
     int b = 50;
     int c = 20;
     int res = ((a > b) ? (a > c) ? a : c : (b > c) ? b : c);
-    System.out.println(res);
+    System.out.println("Greatest among three is " + res);
   }
 }

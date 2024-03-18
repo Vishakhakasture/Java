@@ -1,3 +1,5 @@
+package Loops;
+
 public class Pattern1 {
   public static void main(String[] args) {
     int rows = 5;
@@ -23,9 +25,6 @@ public class Pattern1 {
       for (int j = i + 2; j <= 5; j++) {
         System.out.print(j + " ");
       }
-      // for (int j = (rows - i - 1); j <= 5; j++) {
-      // System.out.print(j + " ");
-      // }
       System.out.println();
     }
 

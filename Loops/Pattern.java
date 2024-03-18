@@ -1,3 +1,5 @@
+package Loops;
+
 class Pattern {
   public static void main(String[] args) {
     int rows = 5;
@@ -49,6 +51,5 @@ class Pattern {
       }
       System.out.println();
     }
-
   }
 }

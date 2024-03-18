@@ -1,3 +1,5 @@
+package Loops;
+
 public class Pattern4 {
   public static void main(String[] args) {
     int n = 6, m = 7;
