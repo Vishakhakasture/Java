@@ -18,5 +18,4 @@ public class Fibonacci {
     System.out.print(n1 + " " + n2);
     printFibonacci(count - 2);
   }
-
 }
