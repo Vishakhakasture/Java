@@ -1,5 +1,7 @@
 package Recursion;
 
+import java.lang.Math;
+
 public class Armstrong {
   public static int findDigti(int num) {
     int digit = 0;

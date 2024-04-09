@@ -1,6 +1,7 @@
 package Loops;
 
-import java.util.Scanner;
+import java.util.*;
+import java.lang.Math;
 
 public class Prime {
   public static boolean isPrime(int num) {
@@ -18,5 +19,6 @@ public class Prime {
     int num = sc.nextInt();
     boolean res = isPrime(num);
     System.out.println(res);
+    sc.close();
   }
 }
