@@ -11,7 +11,9 @@ public class BinarySearch {
       mid = (start + end) / 2;
       if (key == arr[mid]) {
         return mid;
-      } else if (key > arr[mid]) {
+      }
+      // else if (key < arr[mid]) {
+      else if (key > arr[mid]) {
         start = mid + 1;
       } else {
         end = mid - 1;
@@ -24,6 +26,8 @@ public class BinarySearch {
   public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
     int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+    // for desending order
+    // int[] arr1 = { 100, 90, 80, 70, 60, 50, 40, 30, 20, 10 };
     System.out.println("Enter an element to search: ");
     int key = sc.nextInt();
     int ind = binarySearh(arr, key);
