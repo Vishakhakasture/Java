@@ -2,13 +2,17 @@ package Searchtechniques;
 
 import java.util.Scanner;
 
+// time complexity - O(log n)
+
 public class BinarySearch {
   public static int binarySearh(int[] arr, int key) {
     int start = 0;
     int end = arr.length - 1;
     int mid;
     while (start <= end) {
-      mid = (start + end) / 2;
+      // mid = (start + end) / 2; if these are very large value
+      mid = start + (end - start) / 2; // easy for large values
+      // System.err.println(mid);
       if (key == arr[mid]) {
         return mid;
       }
