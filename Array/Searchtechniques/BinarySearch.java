@@ -13,14 +13,14 @@ public class BinarySearch {
       // mid = (start + end) / 2; if these are very large value
       mid = start + (end - start) / 2; // easy for large values
       // System.err.println(mid);
-      if (key == arr[mid]) {
-        return mid;
+      if (key < arr[mid]) {
+        end = mid - 1;
       }
       // else if (key < arr[mid]) {
       else if (key > arr[mid]) {
         start = mid + 1;
       } else {
-        end = mid - 1;
+        return mid;
       }
 
     }
