@@ -52,7 +52,7 @@ public class CyclicSort {
                         pos += 1;
  
                 // ignore all duplicate elements
-                while (item == arr[pos])
+                while (item == arr[pos]) 
                     pos += 1;
  
                 // put the item to it's right position
