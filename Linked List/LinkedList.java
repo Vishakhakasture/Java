@@ -14,6 +14,8 @@ public class LinkedList {
   public static Node head;
   // this is the last node of linked list
   public static Node tail;
+  // to claculate size of linked list
+  public static int size;
 
   // methods to perform simple operations on linked list
 
@@ -22,6 +24,7 @@ public class LinkedList {
   public void addFirst(int data) { // O(1)
     // create new node
     Node newNode = new Node(data);
+    size++;
 
     // if linked list is empty
     if (head == null) {
@@ -43,6 +46,7 @@ public class LinkedList {
   public void addLast(int data) { // O(1)
     // create a newnode
     Node newNode = new Node(data);
+    size++;
 
     // if linked list is empty
     if (head == null) {
@@ -86,6 +90,7 @@ public class LinkedList {
       return;
     }
     Node newNode = new Node(data);
+    size++;
     Node temp = head;
     int i = 0;
     while (i < index - 1) {
@@ -98,6 +103,48 @@ public class LinkedList {
   }
 
   // 2. remove or delete elements from linked list
+
+  public int removeFirst() {
+    // if ll is empty
+    if (size == 0) {
+      System.out.println("linked list is empty...");
+      return Integer.MIN_VALUE;
+    } else if (size == 1) {
+      int val = head.data;
+      head = tail = null;
+      size = 0;
+      return val;
+    }
+    int val = head.data;
+    head = head.next;
+    size--;
+    return val;
+  }
+
+  // remove last node
+  public int removeLast() {
+    if (size == 0) {
+      System.out.println("ll is emty...");
+      return Integer.MIN_VALUE;
+    } else if (size == 1) {
+      int val = head.data;
+      head = tail = null;
+      size = 0;
+      return val;
+    }
+
+    Node prev = head;
+    // to find prev node from linked list
+    for (int i = 0; i < size - 2; i++) {
+      prev = prev.next;
+    }
+    int val = prev.next.data; // tail.data
+    prev.next = null;
+    tail = prev;
+    size--;
+    return val;
+  }
+
   public static void main(String args[]) {
     LinkedList ll = new LinkedList();
     ll.addFirst(2);
@@ -105,6 +152,12 @@ public class LinkedList {
     ll.addLast(3);
     ll.addLast(4);
     ll.addMiddle(4, 5);
+    ll.addMiddle(2, 10);
     ll.printData();
+    ll.removeFirst();
+    ll.printData();
+    ll.removeLast();
+    ll.printData();
+    System.out.println(ll.size);
   }
 }
