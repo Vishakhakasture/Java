@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Queue2Stack {
+public class Queue2Stacks {
   static class Queue {
     static Stack<Integer> s1 = new Stack<>();
     static Stack<Integer> s2 = new Stack<>();
