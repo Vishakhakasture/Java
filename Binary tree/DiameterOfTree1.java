@@ -1,4 +1,4 @@
-public class DiameterOfTree {
+public class DiameterOfTree1 {
   static class Node {
     int data;
     Node left;
