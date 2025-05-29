@@ -3,7 +3,7 @@ import java.util.*;
 public class CreateArray {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.err.println("Enter the size of an array: ");
+    System.out.println("Enter the size of an array: ");
     int n = sc.nextInt();
     int[] arr = new int[n];
     // Taking array elements

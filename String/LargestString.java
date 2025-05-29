@@ -4,12 +4,11 @@ package String;
 public class LargestString {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		time complexity = O(x*n) where x is number of letters
-		String fruits[] = {"apple","kiwi","banana","mango"};
+		// time complexity = O(x*n) where x is number of letters
+		String fruits[] = { "apple", "kiwi", "banana", "mango" };
 		String largest = fruits[0];
-		for(int i = 0; i < fruits.length; i++) {
-			if(largest.compareTo(fruits[i]) < 0) {
+		for (int i = 0; i < fruits.length; i++) {
+			if (largest.compareTo(fruits[i]) < 0) {
 				largest = fruits[i];
 			}
 		}
