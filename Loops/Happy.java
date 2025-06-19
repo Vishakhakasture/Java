@@ -15,7 +15,7 @@ public class Happy {
 
   public static void main(String[] args) {
     // Happy numbers between 1 to 10000
-    for (int k = 1; k <= 10000; k++) {
+    for (int k = 1; k <= 10; k++) {
       int num = k;
       int res = happyNum(num);
       while (res != 4 && res != 1) {
