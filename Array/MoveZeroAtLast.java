@@ -23,7 +23,7 @@ public class MoveZeroAtLast {
     }
     System.out.println(Arrays.toString(res));
 
-    // second approach - using iplace efficient
+    // second approach - using inplace efficient
     // time complexity - O(n)
     // space complexity - O(1) because in place
     int idx = 0; // to place non zero elements
